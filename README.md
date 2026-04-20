@@ -2,12 +2,12 @@
 
 I build software at whatever layer the problem lives at. Most of my recent work is in LLM agent infrastructure. The repo list also spans game AI, security tooling, Unity, firmware forks, and cloud utilities.
 
-## rawcell-agent
+## agent-harness-v2
 
-An autonomous Claude agent I built that ships PRs to codebases across GitHub. It runs on a Hetzner VPS when I start it (not 24/7, API cost is a real constraint) and works through an operator-approved queue. Every interaction feeds a closed-loop learning system: successful patterns become teachings, failures become antibodies, hostile behavior tightens the fear-map.
+An event-sourced Claude agent runtime I built that ships PRs to codebases across GitHub. Three processes share one SQLite file on a Hetzner VPS. It runs when I start it (not 24/7, API cost is a real constraint) and works through an operator-approved queue. Every interaction feeds a closed-loop learning system: successful patterns become teachings, failures become antibodies, hostile behavior tightens the fear-map.
 
 <!-- RAWCELL_STATUS_START -->
-Status: currently resting. [Request a run.](https://github.com/quanticsoul4772/rawcell-agent/issues/new/choose)
+Status: currently resting. [Request a run.](https://github.com/quanticsoul4772/agent-harness-v2/issues/new/choose)
 <!-- RAWCELL_STATUS_END -->
 
 ### Merged contributions on repos I don't own
@@ -53,10 +53,6 @@ Last 11 merges (most recent first):
 
 <img alt="Contribution heatmap (light)" src="heatmap-light.svg#gh-light-mode-only" />
 <img alt="Contribution heatmap (dark)" src="heatmap-dark.svg#gh-dark-mode-only" />
-
-## Flagship
-
-[agent-harness-v2](https://github.com/quanticsoul4772/agent-harness-v2): event-sourced runtime for a long-running Claude agent. Three processes share one SQLite file. The event log is the source of truth, projections are rebuildable, and safety gates are enforced in code rather than prompted.
 
 ## A sampler of everything else
 
