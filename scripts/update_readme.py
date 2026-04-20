@@ -50,9 +50,12 @@ def gh(*args: str) -> str:
 
 
 def fetch_external_merged_prs() -> list[Pr]:
+    # Explicit username here. Do NOT use "@me" from a GitHub Actions runner:
+    # the token auth context resolves @me to github-actions[bot], producing
+    # PRs from across the public GitHub ecosystem that the bot has opened.
     raw = gh(
         "search", "prs",
-        "--author", "@me",
+        "--author", USER,
         "--merged",
         "--limit", "200",
         "--json", "repository,number,title,url,updatedAt",
