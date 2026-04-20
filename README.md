@@ -17,38 +17,53 @@ Receipts, not promises. Every PR linked below landed on a repo owned by someone 
 <!-- RECEIPTS_START -->
 | Repo | Merged | Latest |
 | --- | ---: | --- |
-| `Evaliphy/evaliphy` | 3 | [#32](https://github.com/Evaliphy/evaliphy/pull/32) feat(ci): add vitest code coverage analysis |
-| `lingdojo/kana-dojo` | 3 | [#13003](https://github.com/lingdojo/kana-dojo/pull/13003) content: add new trivia question |
-| `AlphaSudo/zerodast` | 2 | [#86](https://github.com/AlphaSudo/zerodast/pull/86) docs: add CONTRIBUTING.md with full contributor workflow |
-| `leticiv/tarot-reddit-compiler` | 1 | [#8](https://github.com/leticiv/tarot-reddit-compiler/pull/8) feat: add personal notes field to each interpretation |
-| `adandeigor/AlgoLab` | 1 | [#9](https://github.com/adandeigor/AlgoLab/pull/9) feat: add --version flag to CLI |
-| `chatvector-ai/chatvector-ai` | 1 | [#236](https://github.com/chatvector-ai/chatvector-ai/pull/236) fix(logging): route test logs to separate files when APP_EN... |
+| `danesjenovdan/parlameter` | 12 | [#1939](https://github.com/danesjenovdan/parlameter/pull/1939) Pulling refs/heads/dev into zagreb |
+| `233XvX233/Silksong-Steam-multiplayer-mod-data` | 6 | [#16886](https://github.com/233XvX233/Silksong-Steam-multiplayer-mod-data/pull/16886) Auto-append feedback to comments.txt |
+| `Josefjosefjosef/filtr` | 5 | [#2961](https://github.com/Josefjosefjosef/filtr/pull/2961) chore(data): update articles data |
+| `OwenNolis/Jira-Autofix` | 5 | [#24](https://github.com/OwenNolis/Jira-Autofix/pull/24) [JIRAFIX-13] [JIRAFIX-13] Change the footer text to Powered... |
+| `flexera-public/policy_templates` | 4 | [#4360](https://github.com/flexera-public/policy_templates/pull/4360) Update Active Policy List |
+| `elastic/ems-landing-page` | 4 | [#3492](https://github.com/elastic/ems-landing-page/pull/3492) [v9.4] chore: remove redundant lodash resolution (#3419) |
+| `mandarini/repro-nx-release` | 3 | [#38](https://github.com/mandarini/repro-nx-release/pull/38) [patchback] feat: four |
+| `marckraw/convergence` | 3 | [#60](https://github.com/marckraw/convergence/pull/60) Version Packages |
+| `spacesprotocol/certrelay` | 2 | [#64](https://github.com/spacesprotocol/certrelay/pull/64) chore: release v0.1.2 |
+| `peetzweg/polkadot-cli` | 2 | [#178](https://github.com/peetzweg/polkadot-cli/pull/178) Version Packages |
+| `GioPat/gp-grid` | 2 | [#52](https://github.com/GioPat/gp-grid/pull/52) chore(master): release gp-grid 0.11.2 |
+| `Castro-Media/TopStoryReview.com` | 2 | [#6725](https://github.com/Castro-Media/TopStoryReview.com/pull/6725) Automated data update |
 
-Last 11 merges (most recent first):
+Last 12 merges (most recent first):
 
-- `2026-04-20` [`leticiv/tarot-reddit-compiler#8`](https://github.com/leticiv/tarot-reddit-compiler/pull/8) feat: add personal notes field to each interpretation
-- `2026-04-20` [`adandeigor/AlgoLab#9`](https://github.com/adandeigor/AlgoLab/pull/9) feat: add --version flag to CLI
-- `2026-04-20` [`Evaliphy/evaliphy#32`](https://github.com/Evaliphy/evaliphy/pull/32) feat(ci): add vitest code coverage analysis
-- `2026-04-20` [`Evaliphy/evaliphy#40`](https://github.com/Evaliphy/evaliphy/pull/40) feat: add vitest code coverage with GitHub Actions reporting
-- `2026-04-19` [`lingdojo/kana-dojo#13003`](https://github.com/lingdojo/kana-dojo/pull/13003) content: add new trivia question
-- `2026-04-19` [`chatvector-ai/chatvector-ai#236`](https://github.com/chatvector-ai/chatvector-ai/pull/236) fix(logging): route test logs to separate files when APP_ENV=test
-- `2026-04-19` [`Evaliphy/evaliphy#31`](https://github.com/Evaliphy/evaliphy/pull/31) fix(reporters): improve HTML report assertions section UX
-- `2026-04-13` [`lingdojo/kana-dojo#13015`](https://github.com/lingdojo/kana-dojo/pull/13015) content: add new trivia question
-- `2026-04-13` [`AlphaSudo/zerodast#86`](https://github.com/AlphaSudo/zerodast/pull/86) docs: add CONTRIBUTING.md with full contributor workflow
-- `2026-04-13` [`AlphaSudo/zerodast#87`](https://github.com/AlphaSudo/zerodast/pull/87) docs: improve README badge and image alt text for accessibility (#83)
-- `2026-04-13` [`lingdojo/kana-dojo#12944`](https://github.com/lingdojo/kana-dojo/pull/12944) feat(theme): add Lucky Bamboo theme
+- `2026-04-20` [`lukso-network/tools-web-components#848`](https://github.com/lukso-network/tools-web-components/pull/848) chore(main): release 1.191.0
+- `2026-04-20` [`spacesprotocol/certrelay#64`](https://github.com/spacesprotocol/certrelay/pull/64) chore: release v0.1.2
+- `2026-04-20` [`JagPat/Vitan-BrandBuilding#320`](https://github.com/JagPat/Vitan-BrandBuilding/pull/320) [workdrive-sync] Update WorkDrive sync state
+- `2026-04-20` [`mandarini/repro-nx-release#38`](https://github.com/mandarini/repro-nx-release/pull/38) [patchback] feat: four
+- `2026-04-20` [`UtePabst/UtePabst#542`](https://github.com/UtePabst/UtePabst/pull/542) [Automated] Update README with new chess puzzle
+- `2026-04-20` [`yorbapro/smart-neighbor-grow#20`](https://github.com/yorbapro/smart-neighbor-grow/pull/20) New AI News Article: Nuance Launches Dragon Voice Assistant 5.0 with Breakthrou...
+- `2026-04-20` [`MatthiasReinholz/wp-plugin-base#100`](https://github.com/MatthiasReinholz/wp-plugin-base/pull/100) Foundation release v1.7.6
+- `2026-04-20` [`stefanko-ch/Nexus-Stack-for-Education#21`](https://github.com/stefanko-ch/Nexus-Stack-for-Education/pull/21) chore(main): release 1.2.0
+- `2026-04-20` [`ministryofjustice/modernisation-platform#12967`](https://github.com/ministryofjustice/modernisation-platform/pull/12967) New files for terraform/environments
+- `2026-04-20` [`vamsi4162/vamsi4162.github.io#1`](https://github.com/vamsi4162/vamsi4162.github.io/pull/1) Update portfolio website from resume
+- `2026-04-20` [`Josefjosefjosef/filtr#2961`](https://github.com/Josefjosefjosef/filtr/pull/2961) chore(data): update articles data
+- `2026-04-20` [`aliou/pi-neuralwatt#1`](https://github.com/aliou/pi-neuralwatt/pull/1) Updating @aliou/pi-neuralwatt to version 0.1.0
 <!-- RECEIPTS_END -->
 
 ### What the agent is good at
 
 <!-- CAPABILITIES_START -->
-**CI / lint unblock**: 2 merged
-  - [`Evaliphy/evaliphy#32`](https://github.com/Evaliphy/evaliphy/pull/32) feat(ci): add vitest code coverage analysis
-  - [`Evaliphy/evaliphy#40`](https://github.com/Evaliphy/evaliphy/pull/40) feat: add vitest code coverage with GitHub Actions reporting
+**Dep bump / lockfile**: 6 merged
+  - [`fink-lang/homebrew-tap#19`](https://github.com/fink-lang/homebrew-tap/pull/19) chore: bump fink to v0.57.0
+  - [`yanosea/yanoNixFiles#1356`](https://github.com/yanosea/yanoNixFiles/pull/1356) ⚡deps(nix): update dependencies in `flake.lock` (2026-04-21)
+  - [`fern-api/fern#15171`](https://github.com/fern-api/fern/pull/15171) chore(php): regenerate php-model seeds to pick up phpunit 12.5.22 bump
+  - [`habitat-sh/chef-habitat-docs#97`](https://github.com/habitat-sh/chef-habitat-docs/pull/97) [release-2.0] Bump habitat docs content to latest stable release (d98...
+
+**CI / lint unblock**: 7 merged
+  - [`NASA-IMPACT/veda-config#979`](https://github.com/NASA-IMPACT/veda-config/pull/979) ci: Update submodule to version v6.20.7
+  - [`TheLarkInn/aipm#601`](https://github.com/TheLarkInn/aipm/pull/601) [coverage-improver] Cover detect() read_to_string error propagation i...
+  - [`akporto/pix-payment-engine#2`](https://github.com/akporto/pix-payment-engine/pull/2) ci: [Auto-PR] Integration of branch feature/pix-payment-engine
+  - [`Sebenza-Hub-V001/Sebenza_Hub_Claude_V2#376`](https://github.com/Sebenza-Hub-V001/Sebenza_Hub_Claude_V2/pull/376) Auto-deploy: Enhance applicant detail view documentation with Playwri...
 
 **Bug fix**: 2 merged
-  - [`chatvector-ai/chatvector-ai#236`](https://github.com/chatvector-ai/chatvector-ai/pull/236) fix(logging): route test logs to separate files when APP_ENV=test
-  - [`Evaliphy/evaliphy#31`](https://github.com/Evaliphy/evaliphy/pull/31) fix(reporters): improve HTML report assertions section UX
+  - [`BV-BRC/BV-BRC-Web#1278`](https://github.com/BV-BRC/BV-BRC-Web/pull/1278) Hotfix v3.57.30
+  - [`mandarini/repro-nx-release#29`](https://github.com/mandarini/repro-nx-release/pull/29) [patchback] fix: four
 <!-- CAPABILITIES_END -->
 
 ### Cross-repo commit activity, last 12 months
