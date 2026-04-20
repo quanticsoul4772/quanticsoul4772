@@ -1,27 +1,32 @@
 """Regenerate the dynamic blocks of README.md from live GitHub data.
 
-Blocks updated:
-  RECEIPTS     — table of merged PRs on repos not owned by the profile user.
-  CAPABILITIES — four-category breakdown with PR-link receipts per category.
-  HEATMAP      — 52x7 SVG of commit counts per day over the last year, theme-aware.
+Updates:
+  RECEIPTS     : table of merged PRs on repos not owned by the profile user.
+  CAPABILITIES : four-category breakdown with PR-link samples per category.
+  heatmap-light.svg / heatmap-dark.svg : 52x7 commit-count grid per day
+    over the last year, written as separate files so GitHub renders them
+    via <img src="...svg#gh-{light,dark}-mode-only">. Inline SVG inside
+    markdown is sanitized by GitHub and will not render.
 
-The script is idempotent: if nothing has changed since the last run, the
-README file content will be byte-identical.
+The script is idempotent: if nothing has changed, README.md and the two
+SVG files come out byte-identical.
 """
 from __future__ import annotations
 
 import json
-import os
 import re
 import subprocess
 import sys
 from collections import defaultdict
 from dataclasses import dataclass
-from datetime import date, datetime, timedelta, timezone
+from datetime import date, datetime
 from pathlib import Path
 
 USER = "quanticsoul4772"
-README = Path(__file__).resolve().parent.parent / "README.md"
+ROOT = Path(__file__).resolve().parent.parent
+README = ROOT / "README.md"
+HEATMAP_LIGHT = ROOT / "heatmap-light.svg"
+HEATMAP_DARK = ROOT / "heatmap-dark.svg"
 RECEIPTS_LIMIT = 12
 CATEGORY_LIMIT = 4
 HEATMAP_WEEKS = 52
@@ -36,8 +41,6 @@ class Pr:
     merged_at: datetime
 
 
-# --- GitHub calls via gh CLI (inherits auth from the workflow) ---
-
 def gh(*args: str) -> str:
     result = subprocess.run(["gh", *args], capture_output=True, text=True, check=False)
     if result.returncode != 0:
@@ -47,7 +50,6 @@ def gh(*args: str) -> str:
 
 
 def fetch_external_merged_prs() -> list[Pr]:
-    """Every PR @me has merged on a repo NOT owned by @me."""
     raw = gh(
         "search", "prs",
         "--author", "@me",
@@ -73,7 +75,6 @@ def fetch_external_merged_prs() -> list[Pr]:
 
 
 def fetch_contribution_calendar() -> list[tuple[date, int]]:
-    """Daily commit counts for the last year via GraphQL contributionsCollection."""
     query = """
     query($login: String!) {
       user(login: $login) {
@@ -99,13 +100,11 @@ def fetch_contribution_calendar() -> list[tuple[date, int]]:
     return out
 
 
-# --- Categorization ---
-
 CATEGORIES: list[tuple[str, list[str]]] = [
     ("Conflict resolution", ["conflict", "rebase", "merge conflict", "resolves #", "resolve #"]),
-    ("Dep bump / lockfile",  ["bump", "dep(", "deps:", "deps(", "chore(deps)", "lockfile", "lock file"]),
-    ("CI / lint unblock",    ["lint", "eslint", "ci:", "ci(", "coverage", "pnpm-lock", ".github/workflows"]),
-    ("Bug fix",              ["fix:", "fix(", "bug", "crash", "regression", "hotfix"]),
+    ("Dep bump / lockfile", ["bump", "dep(", "deps:", "deps(", "chore(deps)", "lockfile", "lock file"]),
+    ("CI / lint unblock",   ["lint", "eslint", "ci:", "ci(", "coverage", "pnpm-lock", ".github/workflows"]),
+    ("Bug fix",             ["fix:", "fix(", "bug", "crash", "regression", "hotfix"]),
 ]
 
 
@@ -117,7 +116,10 @@ def categorize(pr: Pr) -> str | None:
     return None
 
 
-# --- Block rendering ---
+def _truncate(text: str, n: int) -> str:
+    text = text.strip().replace("|", "\\|")
+    return text if len(text) <= n else text[: n - 1] + "..."
+
 
 def render_receipts(prs: list[Pr]) -> str:
     if not prs:
@@ -128,17 +130,13 @@ def render_receipts(prs: list[Pr]) -> str:
     for p in prs:
         by_repo[p.repo].append(p)
 
-    repo_summary: list[tuple[str, int, Pr]] = [
-        (repo, len(items), items[0]) for repo, items in by_repo.items()
-    ]
-    repo_summary.sort(key=lambda row: (-row[1], row[2].merged_at.isoformat()), reverse=False)
+    repo_summary = [(repo, len(items), items[0]) for repo, items in by_repo.items()]
     repo_summary.sort(key=lambda row: -row[1])
 
     lines = ["| Repo | Merged | Latest |", "| --- | ---: | --- |"]
     for repo, count, latest in repo_summary[:RECEIPTS_LIMIT]:
-        bar = "█" * min(count, 6)
         latest_link = f"[#{latest.number}]({latest.url})"
-        lines.append(f"| `{repo}` | {bar} {count} | {latest_link} {_truncate(latest.title, 60)} |")
+        lines.append(f"| `{repo}` | {count} | {latest_link} {_truncate(latest.title, 60)} |")
 
     lines.append("")
     lines.append(f"Last {len(recent)} merges (most recent first):")
@@ -164,7 +162,7 @@ def render_capabilities(prs: list[Pr]) -> str:
         items = buckets.get(name, [])
         if not items:
             continue
-        header = f"**{name}** — {len(items)} merged"
+        header = f"**{name}**: {len(items)} merged"
         sample = items[:CATEGORY_LIMIT]
         bullet_lines = [
             f"  - [`{p.repo}#{p.number}`]({p.url}) {_truncate(p.title, 70)}" for p in sample
@@ -173,14 +171,7 @@ def render_capabilities(prs: list[Pr]) -> str:
     return "\n\n".join(blocks)
 
 
-def render_heatmap(days: list[tuple[date, int]]) -> str:
-    """Render a 52w x 7d contribution heatmap as inline SVG (theme-aware)."""
-    if not days:
-        return "_No contribution data available._"
-
-    days.sort(key=lambda row: row[0])
-    days = days[-HEATMAP_WEEKS * 7:]
-
+def _build_heatmap_svg(days: list[tuple[date, int]], palette: list[str], text_color: str) -> str:
     cell = 12
     gap = 3
     left_pad = 28
@@ -204,14 +195,11 @@ def render_heatmap(days: list[tuple[date, int]]) -> str:
             return 3
         return 4
 
-    light_palette = ["#ebedf0", "#9be9a8", "#40c463", "#30a14e", "#216e39"]
-    dark_palette  = ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353"]
-
-    weeks: list[list[tuple[date, int]]] = []
-    current: list[tuple[date, int]] = []
+    weeks: list[list[tuple[date | None, int]]] = []
+    current: list[tuple[date | None, int]] = []
     anchor_dow = days[0][0].weekday()
     for _ in range(anchor_dow):
-        current.append((None, 0))  # type: ignore[arg-type]
+        current.append((None, 0))
     for d, c in days:
         current.append((d, c))
         if len(current) == 7:
@@ -219,12 +207,11 @@ def render_heatmap(days: list[tuple[date, int]]) -> str:
             current = []
     if current:
         while len(current) < 7:
-            current.append((None, 0))  # type: ignore[arg-type]
+            current.append((None, 0))
         weeks.append(current)
     weeks = weeks[-HEATMAP_WEEKS:]
 
-    rects_light: list[str] = []
-    rects_dark: list[str] = []
+    rects: list[str] = []
     for wi, week in enumerate(weeks):
         x = left_pad + wi * (cell + gap)
         for di, (d, c) in enumerate(week):
@@ -232,14 +219,11 @@ def render_heatmap(days: list[tuple[date, int]]) -> str:
             if d is None:
                 continue
             lvl = level(c)
-            title = f"{d.isoformat()}: {c} contribution{'s' if c != 1 else ''}"
-            rects_light.append(
+            plural = "s" if c != 1 else ""
+            title = f"{d.isoformat()}: {c} contribution{plural}"
+            rects.append(
                 f'<rect x="{x}" y="{y}" width="{cell}" height="{cell}" rx="2" ry="2" '
-                f'fill="{light_palette[lvl]}"><title>{title}</title></rect>'
-            )
-            rects_dark.append(
-                f'<rect x="{x}" y="{y}" width="{cell}" height="{cell}" rx="2" ry="2" '
-                f'fill="{dark_palette[lvl]}"><title>{title}</title></rect>'
+                f'fill="{palette[lvl]}"><title>{title}</title></rect>'
             )
 
     day_labels: list[str] = []
@@ -248,36 +232,41 @@ def render_heatmap(days: list[tuple[date, int]]) -> str:
         y = top_pad + row * (cell + gap) + cell - 2
         day_labels.append(
             f'<text x="0" y="{y}" font-family="Segoe UI, system-ui, sans-serif" '
-            f'font-size="10" fill="currentColor">{name}</text>'
+            f'font-size="10" fill="{text_color}">{name}</text>'
         )
 
     total = sum(c for _, c in days)
     summary = (
         f'<text x="{left_pad}" y="12" font-family="Segoe UI, system-ui, sans-serif" '
-        f'font-size="11" fill="currentColor">{total:,} contributions, last {len(days)} days</text>'
+        f'font-size="11" fill="{text_color}">{total:,} contributions, last {len(days)} days</text>'
     )
 
-    svg = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" width="{width}" height="{height}" role="img" aria-label="Contribution heatmap">
-  <style>
-    :root {{ color: #1f2328; }}
-    @media (prefers-color-scheme: dark) {{ :root {{ color: #e6edf3; }} .light {{ display: none; }} .dark {{ display: inline; }} }}
-    @media (prefers-color-scheme: light) {{ .dark {{ display: none; }} .light {{ display: inline; }} }}
-    .dark {{ display: none; }}
-  </style>
-  {summary}
-  {"".join(day_labels)}
-  <g class="light">{"".join(rects_light)}</g>
-  <g class="dark">{"".join(rects_dark)}</g>
-</svg>"""
-
-    return svg
+    return (
+        f'<svg xmlns="http://www.w3.org/2000/svg" '
+        f'viewBox="0 0 {width} {height}" width="{width}" height="{height}" '
+        f'role="img" aria-label="Contribution heatmap">'
+        f'{summary}{"".join(day_labels)}{"".join(rects)}</svg>'
+    )
 
 
-# --- Marker replacement ---
+def write_heatmaps(days: list[tuple[date, int]]) -> None:
+    days = sorted(days, key=lambda row: row[0])[-HEATMAP_WEEKS * 7:]
+    if not days:
+        HEATMAP_LIGHT.write_text("", encoding="utf-8")
+        HEATMAP_DARK.write_text("", encoding="utf-8")
+        return
 
-def _truncate(text: str, n: int) -> str:
-    text = text.strip().replace("|", "\\|")
-    return text if len(text) <= n else text[: n - 1] + "…"
+    light_palette = ["#ebedf0", "#9be9a8", "#40c463", "#30a14e", "#216e39"]
+    dark_palette  = ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353"]
+
+    HEATMAP_LIGHT.write_text(
+        _build_heatmap_svg(days, light_palette, "#1f2328"),
+        encoding="utf-8",
+    )
+    HEATMAP_DARK.write_text(
+        _build_heatmap_svg(days, dark_palette, "#e6edf3"),
+        encoding="utf-8",
+    )
 
 
 def replace_block(content: str, tag: str, new_body: str) -> str:
@@ -295,15 +284,15 @@ def main() -> int:
 
     receipts = render_receipts(prs)
     capabilities = render_capabilities(prs)
-    heatmap = render_heatmap(days)
 
     content = README.read_text(encoding="utf-8")
     content = replace_block(content, "RECEIPTS", receipts)
     content = replace_block(content, "CAPABILITIES", capabilities)
-    content = replace_block(content, "HEATMAP", heatmap)
     README.write_text(content, encoding="utf-8")
 
-    print(f"Receipts:     {len(prs)} external-repo PRs")
+    write_heatmaps(days)
+
+    print(f"Receipts: {len(prs)} external-repo PRs")
     print(f"Contribution days: {len(days)}")
     return 0
 

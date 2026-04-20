@@ -17,52 +17,38 @@ Receipts, not promises. Every PR linked below landed on a repo owned by someone 
 <!-- RECEIPTS_START -->
 | Repo | Merged | Latest |
 | --- | ---: | --- |
-| `danesjenovdan/parlameter` | ██████ 8 | [#1931](https://github.com/danesjenovdan/parlameter/pull/1931) Pulling refs/heads/dev into hrastnik |
-| `233XvX233/Silksong-Steam-multiplayer-mod-data` | ██████ 6 | [#16886](https://github.com/233XvX233/Silksong-Steam-multiplayer-mod-data/pull/16886) Auto-append feedback to comments.txt |
-| `OwenNolis/Jira-Autofix` | █████ 5 | [#24](https://github.com/OwenNolis/Jira-Autofix/pull/24) [JIRAFIX-13] [JIRAFIX-13] Change the footer text to Powered… |
-| `Josefjosefjosef/filtr` | █████ 5 | [#2959](https://github.com/Josefjosefjosef/filtr/pull/2959) chore(data): update articles data |
-| `BlazeKing13/tcs-ng` | ████ 4 | [#83](https://github.com/BlazeKing13/tcs-ng/pull/83) Content update from issue #76 |
-| `elastic/ems-landing-page` | ████ 4 | [#3492](https://github.com/elastic/ems-landing-page/pull/3492) [v9.4] chore: remove redundant lodash resolution (#3419) |
-| `3bsalam-1/Car-Info` | ████ 4 | [#4360](https://github.com/3bsalam-1/Car-Info/pull/4360) Pull Request.. |
-| `Nexus-Mods/Vortex` | ███ 3 | [#22627](https://github.com/Nexus-Mods/Vortex/pull/22627) use main logging instead of console |
-| `Sebenza-Hub-V001/Sebenza_Hub_Claude_V2` | ███ 3 | [#376](https://github.com/Sebenza-Hub-V001/Sebenza_Hub_Claude_V2/pull/376) Auto-deploy: Enhance applicant detail view documentation wi… |
-| `nintyboy/workshop-trigger-test` | ███ 3 | [#304](https://github.com/nintyboy/workshop-trigger-test/pull/304) chore: add Luca Rossi to test log |
-| `marckraw/convergence` | ███ 3 | [#60](https://github.com/marckraw/convergence/pull/60) Version Packages |
-| `Blainmac333/k8s-gitops-platform` | ██ 2 | [#208](https://github.com/Blainmac333/k8s-gitops-platform/pull/208) GitOps: deploy 92a197f5961f09136c7140a6dc051af7176c5fd0 |
+| `Evaliphy/evaliphy` | 3 | [#32](https://github.com/Evaliphy/evaliphy/pull/32) feat(ci): add vitest code coverage analysis |
+| `lingdojo/kana-dojo` | 3 | [#13003](https://github.com/lingdojo/kana-dojo/pull/13003) content: add new trivia question |
+| `AlphaSudo/zerodast` | 2 | [#86](https://github.com/AlphaSudo/zerodast/pull/86) docs: add CONTRIBUTING.md with full contributor workflow |
+| `leticiv/tarot-reddit-compiler` | 1 | [#8](https://github.com/leticiv/tarot-reddit-compiler/pull/8) feat: add personal notes field to each interpretation |
+| `adandeigor/AlgoLab` | 1 | [#9](https://github.com/adandeigor/AlgoLab/pull/9) feat: add --version flag to CLI |
+| `chatvector-ai/chatvector-ai` | 1 | [#236](https://github.com/chatvector-ai/chatvector-ai/pull/236) fix(logging): route test logs to separate files when APP_EN... |
 
-Last 12 merges (most recent first):
+Last 11 merges (most recent first):
 
-- `2026-04-20` [`wevm/mppx#376`](https://github.com/wevm/mppx/pull/376) chore: version packages
-- `2026-04-20` [`basementstudio/shader-lab#75`](https://github.com/basementstudio/shader-lab/pull/75) Version Packages
-- `2026-04-20` [`equinor/dm-job#254`](https://github.com/equinor/dm-job/pull/254) chore(main): release 1.6.7
-- `2026-04-20` [`snyk/user-docs#1077`](https://github.com/snyk/user-docs/pull/1077) Generate API docs from spec
-- `2026-04-20` [`marckraw/convergence#60`](https://github.com/marckraw/convergence/pull/60) Version Packages
-- `2026-04-20` [`ivanostanin/lucius-mcp#151`](https://github.com/ivanostanin/lucius-mcp/pull/151) Combined PRs
-- `2026-04-20` [`fink-lang/homebrew-tap#19`](https://github.com/fink-lang/homebrew-tap/pull/19) chore: bump fink to v0.57.0
-- `2026-04-20` [`MrAlders0n/MeshCore-GOME#1756`](https://github.com/MrAlders0n/MeshCore-GOME/pull/1756) Sync repeaters (46 heard)
-- `2026-04-20` [`filipac/google-ip-list#7`](https://github.com/filipac/google-ip-list/pull/7) Automatic Crawl
-- `2026-04-20` [`ebrock/inkframe-recipes#23`](https://github.com/ebrock/inkframe-recipes/pull/23) Add recipe: Superia Xtra 400
-- `2026-04-20` [`yanosea/yanoNixFiles#1356`](https://github.com/yanosea/yanoNixFiles/pull/1356) ⚡deps(nix): update dependencies in `flake.lock` (2026-04-21)
-- `2026-04-20` [`Josefjosefjosef/filtr#2959`](https://github.com/Josefjosefjosef/filtr/pull/2959) chore(data): update articles data
+- `2026-04-20` [`leticiv/tarot-reddit-compiler#8`](https://github.com/leticiv/tarot-reddit-compiler/pull/8) feat: add personal notes field to each interpretation
+- `2026-04-20` [`adandeigor/AlgoLab#9`](https://github.com/adandeigor/AlgoLab/pull/9) feat: add --version flag to CLI
+- `2026-04-20` [`Evaliphy/evaliphy#32`](https://github.com/Evaliphy/evaliphy/pull/32) feat(ci): add vitest code coverage analysis
+- `2026-04-20` [`Evaliphy/evaliphy#40`](https://github.com/Evaliphy/evaliphy/pull/40) feat: add vitest code coverage with GitHub Actions reporting
+- `2026-04-19` [`lingdojo/kana-dojo#13003`](https://github.com/lingdojo/kana-dojo/pull/13003) content: add new trivia question
+- `2026-04-19` [`chatvector-ai/chatvector-ai#236`](https://github.com/chatvector-ai/chatvector-ai/pull/236) fix(logging): route test logs to separate files when APP_ENV=test
+- `2026-04-19` [`Evaliphy/evaliphy#31`](https://github.com/Evaliphy/evaliphy/pull/31) fix(reporters): improve HTML report assertions section UX
+- `2026-04-13` [`lingdojo/kana-dojo#13015`](https://github.com/lingdojo/kana-dojo/pull/13015) content: add new trivia question
+- `2026-04-13` [`AlphaSudo/zerodast#86`](https://github.com/AlphaSudo/zerodast/pull/86) docs: add CONTRIBUTING.md with full contributor workflow
+- `2026-04-13` [`AlphaSudo/zerodast#87`](https://github.com/AlphaSudo/zerodast/pull/87) docs: improve README badge and image alt text for accessibility (#83)
+- `2026-04-13` [`lingdojo/kana-dojo#12944`](https://github.com/lingdojo/kana-dojo/pull/12944) feat(theme): add Lucky Bamboo theme
 <!-- RECEIPTS_END -->
 
 ### What the agent is good at
 
 <!-- CAPABILITIES_START -->
-**Dep bump / lockfile** — 8 merged
-  - [`fink-lang/homebrew-tap#19`](https://github.com/fink-lang/homebrew-tap/pull/19) chore: bump fink to v0.57.0
-  - [`yanosea/yanoNixFiles#1356`](https://github.com/yanosea/yanoNixFiles/pull/1356) ⚡deps(nix): update dependencies in `flake.lock` (2026-04-21)
-  - [`fern-api/fern#15171`](https://github.com/fern-api/fern/pull/15171) chore(php): regenerate php-model seeds to pick up phpunit 12.5.22 bump
-  - [`habitat-sh/chef-habitat-docs#97`](https://github.com/habitat-sh/chef-habitat-docs/pull/97) [release-2.0] Bump habitat docs content to latest stable release (d98…
+**CI / lint unblock**: 2 merged
+  - [`Evaliphy/evaliphy#32`](https://github.com/Evaliphy/evaliphy/pull/32) feat(ci): add vitest code coverage analysis
+  - [`Evaliphy/evaliphy#40`](https://github.com/Evaliphy/evaliphy/pull/40) feat: add vitest code coverage with GitHub Actions reporting
 
-**CI / lint unblock** — 6 merged
-  - [`akporto/pix-payment-engine#2`](https://github.com/akporto/pix-payment-engine/pull/2) ci: [Auto-PR] Integration of branch feature/pix-payment-engine
-  - [`Sebenza-Hub-V001/Sebenza_Hub_Claude_V2#376`](https://github.com/Sebenza-Hub-V001/Sebenza_Hub_Claude_V2/pull/376) Auto-deploy: Enhance applicant detail view documentation with Playwri…
-  - [`mandarini/repro-nx-release#31`](https://github.com/mandarini/repro-nx-release/pull/31) [patchback] ci: patchback fix
-  - [`TanStack/virtual#1161`](https://github.com/TanStack/virtual/pull/1161) ci: Version Packages
-
-**Bug fix** — 1 merged
-  - [`mandarini/repro-nx-release#29`](https://github.com/mandarini/repro-nx-release/pull/29) [patchback] fix: four
+**Bug fix**: 2 merged
+  - [`chatvector-ai/chatvector-ai#236`](https://github.com/chatvector-ai/chatvector-ai/pull/236) fix(logging): route test logs to separate files when APP_ENV=test
+  - [`Evaliphy/evaliphy#31`](https://github.com/Evaliphy/evaliphy/pull/31) fix(reporters): improve HTML report assertions section UX
 <!-- CAPABILITIES_END -->
 
 ### Cross-repo commit activity, last 12 months
