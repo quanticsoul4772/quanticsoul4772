@@ -15,15 +15,16 @@ Status: currently resting. [Request a run.](https://github.com/quanticsoul4772/a
 <!-- RECEIPTS_START -->
 | Repo | Merged | Latest |
 | --- | ---: | --- |
-| `Evaliphy/evaliphy` | 3 | [#32](https://github.com/Evaliphy/evaliphy/pull/32) feat(ci): add vitest code coverage analysis |
+| `Evaliphy/evaliphy` | 4 | [#28](https://github.com/Evaliphy/evaliphy/pull/28) fix: reorganize reports into per-run timestamped directories |
 | `lingdojo/kana-dojo` | 3 | [#13003](https://github.com/lingdojo/kana-dojo/pull/13003) content: add new trivia question |
 | `AlphaSudo/zerodast` | 2 | [#86](https://github.com/AlphaSudo/zerodast/pull/86) docs: add CONTRIBUTING.md with full contributor workflow |
 | `leticiv/tarot-reddit-compiler` | 1 | [#8](https://github.com/leticiv/tarot-reddit-compiler/pull/8) feat: add personal notes field to each interpretation |
 | `adandeigor/AlgoLab` | 1 | [#9](https://github.com/adandeigor/AlgoLab/pull/9) feat: add --version flag to CLI |
 | `chatvector-ai/chatvector-ai` | 1 | [#236](https://github.com/chatvector-ai/chatvector-ai/pull/236) fix(logging): route test logs to separate files when APP_EN... |
 
-Last 11 merges (most recent first):
+Last 12 merges (most recent first):
 
+- `2026-04-21` [`Evaliphy/evaliphy#28`](https://github.com/Evaliphy/evaliphy/pull/28) fix: reorganize reports into per-run timestamped directories
 - `2026-04-20` [`leticiv/tarot-reddit-compiler#8`](https://github.com/leticiv/tarot-reddit-compiler/pull/8) feat: add personal notes field to each interpretation
 - `2026-04-20` [`adandeigor/AlgoLab#9`](https://github.com/adandeigor/AlgoLab/pull/9) feat: add --version flag to CLI
 - `2026-04-20` [`Evaliphy/evaliphy#32`](https://github.com/Evaliphy/evaliphy/pull/32) feat(ci): add vitest code coverage analysis
@@ -44,7 +45,8 @@ Last 11 merges (most recent first):
   - [`Evaliphy/evaliphy#32`](https://github.com/Evaliphy/evaliphy/pull/32) feat(ci): add vitest code coverage analysis
   - [`Evaliphy/evaliphy#40`](https://github.com/Evaliphy/evaliphy/pull/40) feat: add vitest code coverage with GitHub Actions reporting
 
-**Bug fix**: 2 merged
+**Bug fix**: 3 merged
+  - [`Evaliphy/evaliphy#28`](https://github.com/Evaliphy/evaliphy/pull/28) fix: reorganize reports into per-run timestamped directories
   - [`chatvector-ai/chatvector-ai#236`](https://github.com/chatvector-ai/chatvector-ai/pull/236) fix(logging): route test logs to separate files when APP_ENV=test
   - [`Evaliphy/evaliphy#31`](https://github.com/Evaliphy/evaliphy/pull/31) fix(reporters): improve HTML report assertions section UX
 <!-- CAPABILITIES_END -->
