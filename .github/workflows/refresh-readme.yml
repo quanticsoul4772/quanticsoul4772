@@ -25,7 +25,16 @@ jobs:
 
       - name: Regenerate dynamic blocks
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # The workflow's auto-provided GITHUB_TOKEN is a GitHub App
+          # installation token scoped to this repo. Under it, `gh search
+          # prs --author <user>` returns a narrower result set (the App
+          # can only surface PRs in repos it is installed in), and the
+          # receipts table silently missed entire batches of external-
+          # repo merges. RECEIPTS_PAT is a user-scoped PAT with read
+          # access across the operator's contributions; it is used here
+          # for the search call only. The Checkout + Commit steps still
+          # run under GITHUB_TOKEN.
+          GH_TOKEN: ${{ secrets.RECEIPTS_PAT }}
         run: python scripts/update_readme.py
 
       - name: Commit if changed
