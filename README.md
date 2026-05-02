@@ -15,6 +15,7 @@ Status: currently resting. [Request a run.](https://github.com/quanticsoul4772/a
 <!-- RECEIPTS_START -->
 | Repo | Merged | Latest |
 | --- | ---: | --- |
+| `alexhill2911/splitpro` | 11 | [#11](https://github.com/alexhill2911/splitpro/pull/11) docs(readme): correct license claim; link CONTRIBUTING / SE... |
 | `Evaliphy/evaliphy` | 4 | [#28](https://github.com/Evaliphy/evaliphy/pull/28) fix: reorganize reports into per-run timestamped directories |
 | `lingdojo/kana-dojo` | 3 | [#13003](https://github.com/lingdojo/kana-dojo/pull/13003) content: add new trivia question |
 | `AlphaSudo/zerodast` | 2 | [#86](https://github.com/AlphaSudo/zerodast/pull/86) docs: add CONTRIBUTING.md with full contributor workflow |
@@ -24,24 +25,25 @@ Status: currently resting. [Request a run.](https://github.com/quanticsoul4772/a
 
 Last 12 merges (most recent first):
 
+- `2026-05-02` [`alexhill2911/splitpro#11`](https://github.com/alexhill2911/splitpro/pull/11) docs(readme): correct license claim; link CONTRIBUTING / SECURITY / CHANGELOG
+- `2026-05-02` [`alexhill2911/splitpro#10`](https://github.com/alexhill2911/splitpro/pull/10) tests(events): add vitest coverage for events.js public API
+- `2026-05-02` [`alexhill2911/splitpro#9`](https://github.com/alexhill2911/splitpro/pull/9) Add CODEOWNERS file for default code ownership
+- `2026-05-02` [`alexhill2911/splitpro#8`](https://github.com/alexhill2911/splitpro/pull/8) chore: add .editorconfig for consistent editor formatting
+- `2026-05-02` [`alexhill2911/splitpro#7`](https://github.com/alexhill2911/splitpro/pull/7) docs: add CHANGELOG.md (Keep a Changelog format)
+- `2026-05-02` [`alexhill2911/splitpro#6`](https://github.com/alexhill2911/splitpro/pull/6) chore: add pull request template
+- `2026-05-02` [`alexhill2911/splitpro#5`](https://github.com/alexhill2911/splitpro/pull/5) chore: add GitHub issue templates
+- `2026-05-02` [`alexhill2911/splitpro#4`](https://github.com/alexhill2911/splitpro/pull/4) docs: add SECURITY.md with vulnerability reporting policy
+- `2026-05-02` [`alexhill2911/splitpro#3`](https://github.com/alexhill2911/splitpro/pull/3) docs: add CONTRIBUTING.md
+- `2026-05-02` [`alexhill2911/splitpro#2`](https://github.com/alexhill2911/splitpro/pull/2) Add MIT LICENSE file
+- `2026-05-02` [`alexhill2911/splitpro#1`](https://github.com/alexhill2911/splitpro/pull/1) docs: add top-level README
 - `2026-04-21` [`Evaliphy/evaliphy#28`](https://github.com/Evaliphy/evaliphy/pull/28) fix: reorganize reports into per-run timestamped directories
-- `2026-04-20` [`leticiv/tarot-reddit-compiler#8`](https://github.com/leticiv/tarot-reddit-compiler/pull/8) feat: add personal notes field to each interpretation
-- `2026-04-20` [`adandeigor/AlgoLab#9`](https://github.com/adandeigor/AlgoLab/pull/9) feat: add --version flag to CLI
-- `2026-04-20` [`Evaliphy/evaliphy#32`](https://github.com/Evaliphy/evaliphy/pull/32) feat(ci): add vitest code coverage analysis
-- `2026-04-20` [`Evaliphy/evaliphy#40`](https://github.com/Evaliphy/evaliphy/pull/40) feat: add vitest code coverage with GitHub Actions reporting
-- `2026-04-19` [`lingdojo/kana-dojo#13003`](https://github.com/lingdojo/kana-dojo/pull/13003) content: add new trivia question
-- `2026-04-19` [`chatvector-ai/chatvector-ai#236`](https://github.com/chatvector-ai/chatvector-ai/pull/236) fix(logging): route test logs to separate files when APP_ENV=test
-- `2026-04-19` [`Evaliphy/evaliphy#31`](https://github.com/Evaliphy/evaliphy/pull/31) fix(reporters): improve HTML report assertions section UX
-- `2026-04-13` [`lingdojo/kana-dojo#13015`](https://github.com/lingdojo/kana-dojo/pull/13015) content: add new trivia question
-- `2026-04-13` [`AlphaSudo/zerodast#86`](https://github.com/AlphaSudo/zerodast/pull/86) docs: add CONTRIBUTING.md with full contributor workflow
-- `2026-04-13` [`AlphaSudo/zerodast#87`](https://github.com/AlphaSudo/zerodast/pull/87) docs: improve README badge and image alt text for accessibility (#83)
-- `2026-04-13` [`lingdojo/kana-dojo#12944`](https://github.com/lingdojo/kana-dojo/pull/12944) feat(theme): add Lucky Bamboo theme
 <!-- RECEIPTS_END -->
 
 ### What the agent has shipped, by category
 
 <!-- CAPABILITIES_START -->
-**CI / lint unblock**: 2 merged
+**CI / lint unblock**: 3 merged
+  - [`alexhill2911/splitpro#10`](https://github.com/alexhill2911/splitpro/pull/10) tests(events): add vitest coverage for events.js public API
   - [`Evaliphy/evaliphy#32`](https://github.com/Evaliphy/evaliphy/pull/32) feat(ci): add vitest code coverage analysis
   - [`Evaliphy/evaliphy#40`](https://github.com/Evaliphy/evaliphy/pull/40) feat: add vitest code coverage with GitHub Actions reporting
 
