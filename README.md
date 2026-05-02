@@ -59,15 +59,15 @@ Last 12 merges (most recent first):
 ## A sampler of everything else
 
 - [mcplint](https://github.com/quanticsoul4772/mcplint): Rust CLI for testing, fuzzing, and security-scanning MCP servers.
-- [analytical-mcp](https://github.com/quanticsoul4772/analytical-mcp) and [unified-thinking](https://github.com/quanticsoul4772/unified-thinking): two different cuts at giving models structured reasoning primitives (TypeScript, Go).
-- [bruno](https://github.com/quanticsoul4772/bruno): neural behavior engineering framework, named after Giordano Bruno.
+- [analytical-mcp](https://github.com/quanticsoul4772/analytical-mcp), [unified-thinking](https://github.com/quanticsoul4772/unified-thinking), and [mcp-reasoning](https://github.com/quanticsoul4772/mcp-reasoning): three different cuts at giving models structured reasoning primitives (TypeScript, Go, and a 15-tool reasoning server).
+- [claw-code-parity](https://github.com/quanticsoul4772/claw-code-parity): Rust CLI agent-harness rewrite with a parity rubric, mock harness, and structural analysis tools.
+- [bruno](https://github.com/quanticsoul4772/bruno) and [bruno-swarm](https://github.com/quanticsoul4772/bruno-swarm): neural behavior engineering framework (named after Giordano Bruno) and a multi-agent developer swarm built on top of it.
 - [zeek-yara-integration](https://github.com/quanticsoul4772/zeek-yara-integration): network-security learning platform built on Zeek and YARA.
 - [trellis-runpod-worker](https://github.com/quanticsoul4772/trellis-runpod-worker): serverless worker for TRELLIS text-to-3D mesh generation.
 - [mesh-firmware](https://github.com/quanticsoul4772/mesh-firmware): personal fork of Meshtastic firmware.
 - [battlecode2026](https://github.com/quanticsoul4772/battlecode2026) and [javabot](https://github.com/quanticsoul4772/javabot): MIT Battlecode competition bots.
-- [ec2sensor](https://github.com/quanticsoul4772/ec2sensor): Go CLI for live EC2 sensor metrics.
 
-Roughly 15 more MCP servers across the ecosystem (Obsidian, Grafana, Bear, Roblox, macOS shell, GitHub, Exa, Langbase, and others). Open an issue if one looks useful and isn't obvious.
+Roughly a dozen more MCP servers across the ecosystem (Obsidian, Grafana, Bear, Roblox, macOS shell, GitHub, Exa, Langbase, and others). Open an issue if one looks useful and isn't obvious.
 
 ## Stack
 
