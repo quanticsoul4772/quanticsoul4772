@@ -53,11 +53,31 @@ def fetch_external_merged_prs() -> list[Pr]:
     # Explicit username here. Do NOT use "@me" from a GitHub Actions runner:
     # the token auth context resolves @me to github-actions[bot], producing
     # PRs from across the public GitHub ecosystem that the bot has opened.
+    #
+    # Two flags are load-bearing:
+    #
+    #   `--sort updated --order desc`
+    #       The default sort is `best-match`, which scores PRs by
+    #       relevance/engagement. Freshly-merged PRs on a brand-new repo
+    #       (zero stars, no comments) rank LOW and get pushed off by older
+    #       more-engaged work, so the receipts table silently misses
+    #       entire batches. Sorting by updated-desc puts the most recent
+    #       merges first.
+    #
+    #   `--limit 1000`
+    #       gh's Search-API ceiling. The script post-filters own-repo PRs
+    #       (line below), so the limit must comfortably exceed total
+    #       own-repo PR count or external PRs get pushed off the page.
+    #       agent-harness-v2 alone is ~300 PRs and growing; 200 was not
+    #       enough on 2026-05-02 (own-repo PRs filled the entire result
+    #       set, dropping older external receipts).
     raw = gh(
         "search", "prs",
         "--author", USER,
         "--merged",
-        "--limit", "200",
+        "--sort", "updated",
+        "--order", "desc",
+        "--limit", "1000",
         "--json", "repository,number,title,url,updatedAt",
     )
     items = json.loads(raw)
