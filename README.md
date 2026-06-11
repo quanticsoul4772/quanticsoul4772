@@ -17,7 +17,7 @@ Status: currently resting. [Request a run.](https://github.com/quanticsoul4772/a
 | --- | ---: | --- |
 | `alexhill2911/splitpro` | 11 | [#11](https://github.com/alexhill2911/splitpro/pull/11) docs(readme): correct license claim; link CONTRIBUTING / SE... |
 | `Evaliphy/evaliphy` | 4 | [#28](https://github.com/Evaliphy/evaliphy/pull/28) fix: reorganize reports into per-run timestamped directories |
-| `lingdojo/kana-dojo` | 3 | [#13003](https://github.com/lingdojo/kana-dojo/pull/13003) content: add new trivia question |
+| `lingdojo/kana-dojo` | 2 | [#13003](https://github.com/lingdojo/kana-dojo/pull/13003) content: add new trivia question |
 | `AlphaSudo/zerodast` | 2 | [#86](https://github.com/AlphaSudo/zerodast/pull/86) docs: add CONTRIBUTING.md with full contributor workflow |
 | `leticiv/tarot-reddit-compiler` | 1 | [#8](https://github.com/leticiv/tarot-reddit-compiler/pull/8) feat: add personal notes field to each interpretation |
 | `adandeigor/AlgoLab` | 1 | [#9](https://github.com/adandeigor/AlgoLab/pull/9) feat: add --version flag to CLI |
