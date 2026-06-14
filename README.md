@@ -16,7 +16,7 @@ Status: currently resting. [Request a run.](https://github.com/quanticsoul4772/a
 | Repo | Merged | Latest |
 | --- | ---: | --- |
 | `alexhill2911/splitpro` | 11 | [#11](https://github.com/alexhill2911/splitpro/pull/11) docs(readme): correct license claim; link CONTRIBUTING / SE... |
-| `Evaliphy/evaliphy` | 4 | [#28](https://github.com/Evaliphy/evaliphy/pull/28) fix: reorganize reports into per-run timestamped directories |
+| `Evaliphy/evaliphy` | 3 | [#28](https://github.com/Evaliphy/evaliphy/pull/28) fix: reorganize reports into per-run timestamped directories |
 | `leticiv/tarot-reddit-compiler` | 1 | [#8](https://github.com/leticiv/tarot-reddit-compiler/pull/8) feat: add personal notes field to each interpretation |
 | `adandeigor/AlgoLab` | 1 | [#9](https://github.com/adandeigor/AlgoLab/pull/9) feat: add --version flag to CLI |
 | `lingdojo/kana-dojo` | 1 | [#13003](https://github.com/lingdojo/kana-dojo/pull/13003) content: add new trivia question |
@@ -46,10 +46,9 @@ Last 12 merges (most recent first):
   - [`Evaliphy/evaliphy#32`](https://github.com/Evaliphy/evaliphy/pull/32) feat(ci): add vitest code coverage analysis
   - [`Evaliphy/evaliphy#40`](https://github.com/Evaliphy/evaliphy/pull/40) feat: add vitest code coverage with GitHub Actions reporting
 
-**Bug fix**: 3 merged
+**Bug fix**: 2 merged
   - [`Evaliphy/evaliphy#28`](https://github.com/Evaliphy/evaliphy/pull/28) fix: reorganize reports into per-run timestamped directories
   - [`chatvector-ai/chatvector-ai#236`](https://github.com/chatvector-ai/chatvector-ai/pull/236) fix(logging): route test logs to separate files when APP_ENV=test
-  - [`Evaliphy/evaliphy#31`](https://github.com/Evaliphy/evaliphy/pull/31) fix(reporters): improve HTML report assertions section UX
 <!-- CAPABILITIES_END -->
 
 ### Cross-repo commit activity, last 12 months
