@@ -16,7 +16,7 @@ Status: currently resting. [Request a run.](https://github.com/quanticsoul4772/a
 | Repo | Merged | Latest |
 | --- | ---: | --- |
 | `alexhill2911/splitpro` | 11 | [#11](https://github.com/alexhill2911/splitpro/pull/11) docs(readme): correct license claim; link CONTRIBUTING / SE... |
-| `Evaliphy/evaliphy` | 2 | [#28](https://github.com/Evaliphy/evaliphy/pull/28) fix: reorganize reports into per-run timestamped directories |
+| `Evaliphy/evaliphy` | 1 | [#28](https://github.com/Evaliphy/evaliphy/pull/28) fix: reorganize reports into per-run timestamped directories |
 | `leticiv/tarot-reddit-compiler` | 1 | [#8](https://github.com/leticiv/tarot-reddit-compiler/pull/8) feat: add personal notes field to each interpretation |
 | `adandeigor/AlgoLab` | 1 | [#9](https://github.com/adandeigor/AlgoLab/pull/9) feat: add --version flag to CLI |
 
@@ -39,9 +39,8 @@ Last 12 merges (most recent first):
 ### What the agent has shipped, by category
 
 <!-- CAPABILITIES_START -->
-**CI / lint unblock**: 2 merged
+**CI / lint unblock**: 1 merged
   - [`alexhill2911/splitpro#10`](https://github.com/alexhill2911/splitpro/pull/10) tests(events): add vitest coverage for events.js public API
-  - [`Evaliphy/evaliphy#32`](https://github.com/Evaliphy/evaliphy/pull/32) feat(ci): add vitest code coverage analysis
 
 **Bug fix**: 1 merged
   - [`Evaliphy/evaliphy#28`](https://github.com/Evaliphy/evaliphy/pull/28) fix: reorganize reports into per-run timestamped directories
