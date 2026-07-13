@@ -16,9 +16,8 @@ Status: currently resting. [Request a run.](https://github.com/quanticsoul4772/a
 | Repo | Merged | Latest |
 | --- | ---: | --- |
 | `alexhill2911/splitpro` | 11 | [#11](https://github.com/alexhill2911/splitpro/pull/11) docs(readme): correct license claim; link CONTRIBUTING / SE... |
-| `Evaliphy/evaliphy` | 1 | [#28](https://github.com/Evaliphy/evaliphy/pull/28) fix: reorganize reports into per-run timestamped directories |
 
-Last 12 merges (most recent first):
+Last 11 merges (most recent first):
 
 - `2026-05-02` [`alexhill2911/splitpro#11`](https://github.com/alexhill2911/splitpro/pull/11) docs(readme): correct license claim; link CONTRIBUTING / SECURITY / CHANGELOG
 - `2026-05-02` [`alexhill2911/splitpro#10`](https://github.com/alexhill2911/splitpro/pull/10) tests(events): add vitest coverage for events.js public API
@@ -31,7 +30,6 @@ Last 12 merges (most recent first):
 - `2026-05-02` [`alexhill2911/splitpro#3`](https://github.com/alexhill2911/splitpro/pull/3) docs: add CONTRIBUTING.md
 - `2026-05-02` [`alexhill2911/splitpro#2`](https://github.com/alexhill2911/splitpro/pull/2) Add MIT LICENSE file
 - `2026-05-02` [`alexhill2911/splitpro#1`](https://github.com/alexhill2911/splitpro/pull/1) docs: add top-level README
-- `2026-04-21` [`Evaliphy/evaliphy#28`](https://github.com/Evaliphy/evaliphy/pull/28) fix: reorganize reports into per-run timestamped directories
 <!-- RECEIPTS_END -->
 
 ### What the agent has shipped, by category
@@ -39,9 +37,6 @@ Last 12 merges (most recent first):
 <!-- CAPABILITIES_START -->
 **CI / lint unblock**: 1 merged
   - [`alexhill2911/splitpro#10`](https://github.com/alexhill2911/splitpro/pull/10) tests(events): add vitest coverage for events.js public API
-
-**Bug fix**: 1 merged
-  - [`Evaliphy/evaliphy#28`](https://github.com/Evaliphy/evaliphy/pull/28) fix: reorganize reports into per-run timestamped directories
 <!-- CAPABILITIES_END -->
 
 ### Cross-repo commit activity, last 12 months
