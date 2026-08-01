@@ -2,13 +2,13 @@
 
 **Available for contract work.** MCP servers, agent infrastructure, and test automation. Details below.
 
-## What I build for clients
+## What I build
 
 - **MCP servers**: design, build, harden. 15+ shipped across the ecosystem in TypeScript, Rust, and Go. If you want your API or product usable by Claude and other LLM agents, this is the fastest path.
 - **Agent infrastructure**: harnesses, orchestration, and eval/testing loops for LLM agents.
 - **Test automation and performance testing**: test strategy, harnesses, and performance validation for complex systems at network scale. 15+ years in software testing and network security.
 
-Typical engagement: fixed scope ("MCP server for your API, delivered in 2 weeks") or ongoing at ~10 hrs/week.
+Engagement: fixed scope ("MCP server for your API, delivered in 2 weeks") or ongoing at ~10 hrs/week.
 
 **Contact:** open an issue on any repo.
 
