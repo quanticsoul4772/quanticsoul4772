@@ -1,61 +1,44 @@
 # quanticsoul4772
 
-I build software at whatever layer the problem lives at. Most of my recent work is in LLM agent infrastructure. The repo list also spans game AI, security tooling, Unity, firmware forks, and cloud utilities.
+**Available for contract work.** MCP servers, agent infrastructure, and test automation. Details below.
 
-## agent-harness-v2
+## What I build for clients
 
-An event-sourced Claude agent runtime I built that ships PRs to codebases across GitHub. Three processes share one SQLite file on a Hetzner VPS. It runs when I start it (not 24/7, API cost is a real constraint) and works through an operator-approved queue. Every interaction feeds a closed-loop learning system: successful patterns become teachings, failures become antibodies, hostile behavior tightens the fear-map.
+- **MCP servers**: design, build, harden. 15+ shipped across the ecosystem in TypeScript, Rust, and Go. If you want your API or product usable by Claude and other LLM agents, this is the fastest path.
+- **Agent infrastructure**: harnesses, orchestration, and eval/testing loops for LLM agents.
+- **Test automation and performance testing**: test strategy, harnesses, and performance validation for complex systems at network scale. 15+ years in software testing and network security.
 
-<!-- RAWCELL_STATUS_START -->
-Status: currently resting. [Request a run.](https://github.com/quanticsoul4772/agent-harness-v2/issues/new/choose)
-<!-- RAWCELL_STATUS_END -->
+Typical engagement: fixed scope ("MCP server for your API, delivered in 2 weeks") or ongoing at ~10 hrs/week.
 
-### Merged contributions on repos I don't own
+**Contact:** open an issue on any repo.
 
-<!-- RECEIPTS_START -->
-| Repo | Merged | Latest |
-| --- | ---: | --- |
-| `alexhill2911/splitpro` | 11 | [#11](https://github.com/alexhill2911/splitpro/pull/11) docs(readme): correct license claim; link CONTRIBUTING / SE... |
+## Selected work
 
-Last 11 merges (most recent first):
+| Project | What it is | Stack |
+| --- | --- | --- |
+| [mcplint](https://github.com/quanticsoul4772/mcplint) | MCP server testing, fuzzing, and security scanning platform | Rust |
+| [mcp-reasoning](https://github.com/quanticsoul4772/mcp-reasoning) | MCP reasoning server, 35 tools, ~95k LOC | Rust |
+| [unified-thinking](https://github.com/quanticsoul4772/unified-thinking) | Consolidates multiple cognitive thinking patterns into one MCP server | Go |
+| [analytical-mcp](https://github.com/quanticsoul4772/analytical-mcp) | Structured problem-solving tools for AI | TypeScript |
+| [claw-code-parity](https://github.com/quanticsoul4772/claw-code-parity) | CLI agent-harness rewrite with parity rubric and structural analysis | Rust |
+| [zeek-yara-integration](https://github.com/quanticsoul4772/zeek-yara-integration) | Network-security learning platform built on Zeek, YARA, and Suricata | Python |
 
-- `2026-05-02` [`alexhill2911/splitpro#11`](https://github.com/alexhill2911/splitpro/pull/11) docs(readme): correct license claim; link CONTRIBUTING / SECURITY / CHANGELOG
-- `2026-05-02` [`alexhill2911/splitpro#10`](https://github.com/alexhill2911/splitpro/pull/10) tests(events): add vitest coverage for events.js public API
-- `2026-05-02` [`alexhill2911/splitpro#9`](https://github.com/alexhill2911/splitpro/pull/9) Add CODEOWNERS file for default code ownership
-- `2026-05-02` [`alexhill2911/splitpro#8`](https://github.com/alexhill2911/splitpro/pull/8) chore: add .editorconfig for consistent editor formatting
-- `2026-05-02` [`alexhill2911/splitpro#7`](https://github.com/alexhill2911/splitpro/pull/7) docs: add CHANGELOG.md (Keep a Changelog format)
-- `2026-05-02` [`alexhill2911/splitpro#6`](https://github.com/alexhill2911/splitpro/pull/6) chore: add pull request template
-- `2026-05-02` [`alexhill2911/splitpro#5`](https://github.com/alexhill2911/splitpro/pull/5) chore: add GitHub issue templates
-- `2026-05-02` [`alexhill2911/splitpro#4`](https://github.com/alexhill2911/splitpro/pull/4) docs: add SECURITY.md with vulnerability reporting policy
-- `2026-05-02` [`alexhill2911/splitpro#3`](https://github.com/alexhill2911/splitpro/pull/3) docs: add CONTRIBUTING.md
-- `2026-05-02` [`alexhill2911/splitpro#2`](https://github.com/alexhill2911/splitpro/pull/2) Add MIT LICENSE file
-- `2026-05-02` [`alexhill2911/splitpro#1`](https://github.com/alexhill2911/splitpro/pull/1) docs: add top-level README
-<!-- RECEIPTS_END -->
+Roughly a dozen more MCP servers across the ecosystem (Obsidian, Grafana, Bear, Roblox, macOS shell, GitHub, Exa, Langbase, and others).
 
-### What the agent has shipped, by category
+## Activity
 
-<!-- CAPABILITIES_START -->
-**CI / lint unblock**: 1 merged
-  - [`alexhill2911/splitpro#10`](https://github.com/alexhill2911/splitpro/pull/10) tests(events): add vitest coverage for events.js public API
-<!-- CAPABILITIES_END -->
+![GitHub stats](https://github-readme-stats.vercel.app/api?username=quanticsoul4772&show_icons=true&hide_rank=true)
 
-### Cross-repo commit activity, last 12 months
 
-<img alt="Contribution heatmap (light)" src="heatmap-light.svg#gh-light-mode-only" />
-<img alt="Contribution heatmap (dark)" src="heatmap-dark.svg#gh-dark-mode-only" />
 
-## A sampler of everything else
+## How I work
 
-- [mcplint](https://github.com/quanticsoul4772/mcplint): Rust CLI for testing, fuzzing, and security-scanning MCP servers.
-- [analytical-mcp](https://github.com/quanticsoul4772/analytical-mcp), [unified-thinking](https://github.com/quanticsoul4772/unified-thinking), and [mcp-reasoning](https://github.com/quanticsoul4772/mcp-reasoning): three different cuts at giving models structured reasoning primitives (TypeScript, Go, and a 15-tool reasoning server).
-- [claw-code-parity](https://github.com/quanticsoul4772/claw-code-parity): Rust CLI agent-harness rewrite with a parity rubric, mock harness, and structural analysis tools.
-- [bruno](https://github.com/quanticsoul4772/bruno) and [bruno-swarm](https://github.com/quanticsoul4772/bruno-swarm): neural behavior engineering framework (named after Giordano Bruno) and a multi-agent developer swarm built on top of it.
-- [zeek-yara-integration](https://github.com/quanticsoul4772/zeek-yara-integration): network-security learning platform built on Zeek and YARA.
-- [trellis-runpod-worker](https://github.com/quanticsoul4772/trellis-runpod-worker): serverless worker for TRELLIS text-to-3D mesh generation.
-- [mesh-firmware](https://github.com/quanticsoul4772/mesh-firmware): personal fork of Meshtastic firmware.
-- [battlecode2026](https://github.com/quanticsoul4772/battlecode2026) and [javabot](https://github.com/quanticsoul4772/javabot): MIT Battlecode competition bots.
+Fixed scope, clear deliverables, working software over documentation. Diffs and tests with every change. Communication is direct and low-ceremony.
 
-Roughly a dozen more MCP servers across the ecosystem (Obsidian, Grafana, Bear, Roblox, macOS shell, GitHub, Exa, Langbase, and others). Open an issue if one looks useful and isn't obvious.
+## Planned
+
+- A custom Zig std.Io backend over io_uring.
+- A pcap replay tool (tcpreplay-style) in Zig.
 
 ## Stack
 
