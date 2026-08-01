@@ -40,7 +40,7 @@ Roughly a dozen more MCP servers across the ecosystem (Obsidian, Grafana, Bear, 
 
 Fixed scope, clear deliverables, working software over documentation. Diffs and tests with every change. Communication is direct and low-ceremony.
 
-## Planned
+## Currently building
 
 - A custom Zig std.Io backend over io_uring.
 - A pcap replay tool (tcpreplay-style) in Zig.
