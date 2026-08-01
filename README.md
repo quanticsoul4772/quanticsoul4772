@@ -17,8 +17,8 @@ Engagement: fixed scope ("MCP server for your API, delivered in 2 weeks") or ong
 | Project | What it is | Stack |
 | --- | --- | --- |
 | [mcplint](https://github.com/quanticsoul4772/mcplint) | MCP server testing, fuzzing, and security scanning platform | Rust |
-| [mcp-reasoning](https://github.com/quanticsoul4772/mcp-reasoning) | MCP reasoning server, 35 tools, ~95k LOC | Rust |
-| [unified-thinking](https://github.com/quanticsoul4772/unified-thinking) | Consolidates multiple cognitive thinking patterns into one MCP server | Go |
+| [mcp-parallax](https://github.com/quanticsoul4772/mcp-parallax) | MCP server of independent correctives for a model's failure modes: adversarial verification, deterministic checks, cross-session memory, cited research | Rust |
+| zig-uring-io | Custom std.Io backend for Zig 0.16.0 backed by io_uring (private) | Zig |
 | [analytical-mcp](https://github.com/quanticsoul4772/analytical-mcp) | Structured problem-solving tools for AI | TypeScript |
 | [claw-code-parity](https://github.com/quanticsoul4772/claw-code-parity) | CLI agent-harness rewrite with parity rubric and structural analysis | Rust |
 | [zeek-yara-integration](https://github.com/quanticsoul4772/zeek-yara-integration) | Network-security learning platform built on Zeek, YARA, and Suricata | Python |
