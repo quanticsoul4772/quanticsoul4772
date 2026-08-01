@@ -27,6 +27,11 @@ Roughly a dozen more MCP servers across the ecosystem (Obsidian, Grafana, Bear, 
 
 ## Activity
 
+<img alt="Contribution heatmap (light)" src="heatmap-light.svg#gh-light-mode-only" />
+<img alt="Contribution heatmap (dark)" src="heatmap-dark.svg#gh-dark-mode-only" />
+
+
+
 ![GitHub stats](https://github-readme-stats.vercel.app/api?username=quanticsoul4772&show_icons=true&hide_rank=true)
 
 
