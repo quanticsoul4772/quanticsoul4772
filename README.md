@@ -32,10 +32,6 @@ Roughly a dozen more MCP servers across the ecosystem (Obsidian, Grafana, Bear, 
 
 
 
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=quanticsoul4772&show_icons=true&hide_rank=true)
-
-
-
 ## How I work
 
 Fixed scope, clear deliverables, working software over documentation. Diffs and tests with every change. Communication is direct and low-ceremony.
