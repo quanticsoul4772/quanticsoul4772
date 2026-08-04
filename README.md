@@ -24,13 +24,6 @@ Engagement: fixed scope ("MCP server for your API, delivered in 2 weeks") or ong
 
 Roughly a dozen more MCP servers across the ecosystem (Obsidian, Grafana, Bear, Roblox, macOS shell, GitHub, Exa, Langbase, and others).
 
-## Activity
-
-<img alt="Contribution heatmap (light)" src="heatmap-light.svg#gh-light-mode-only" />
-<img alt="Contribution heatmap (dark)" src="heatmap-dark.svg#gh-dark-mode-only" />
-
-
-
 ## How I work
 
 Fixed scope, clear deliverables, working software over documentation. Diffs and tests with every change. Communication is direct and low-ceremony.
