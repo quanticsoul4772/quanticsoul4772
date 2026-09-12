@@ -8,8 +8,6 @@
 - **Agent infrastructure**: harnesses, orchestration, and eval/testing loops for LLM agents.
 - **Test automation and performance testing**: test strategy, harnesses, and performance validation for complex systems at network scale. 15+ years in software testing and network security.
 
-Engagement: fixed scope ("MCP server for your API, delivered in 2 weeks") or ongoing at ~10 hrs/week.
-
 **Contact:** open an issue on any repo.
 
 ## Selected work
