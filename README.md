@@ -1,6 +1,6 @@
 # quanticsoul4772
 
-**Available for contract work.** MCP servers, agent infrastructure, and test automation. Details below.
+MCP servers, agent infrastructure, and test automation.
 
 ## What I build
 
@@ -21,10 +21,6 @@
 | [zeek-yara-integration](https://github.com/quanticsoul4772/zeek-yara-integration) | Network-security learning platform built on Zeek, YARA, and Suricata | Python |
 
 Roughly a dozen more MCP servers across the ecosystem (Obsidian, Grafana, Bear, Roblox, macOS shell, GitHub, Exa, Langbase, and others).
-
-## How I work
-
-Fixed scope, clear deliverables, working software over documentation. Diffs and tests with every change. Communication is direct and low-ceremony.
 
 ## Currently building
 
